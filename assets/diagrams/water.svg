@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 492" width="1200" height="492" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+  <title>Figure 4. Water ripple field</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9" fill="none" stroke="#111" stroke-width="1.3"/>
+    </marker>
+    <pattern id="grid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16,0 L0,0 0,16" fill="none" stroke="#2f6db5" stroke-opacity="0.12" stroke-width="0.8"/>
+    </pattern>
+    <style>
+      text{font-size:12px;fill:#111;font-family:Helvetica,Arial,sans-serif}
+      .b{fill:#fff;stroke:#111;stroke-width:1.2}
+      .c{text-anchor:middle}
+      .t{text-anchor:middle;font-weight:700}
+      .l{stroke:#111;stroke-width:1.2;fill:none}
+      .w{fill:none;stroke:#2f6db5;stroke-width:1.2}
+    </style>
+  </defs>
+  <rect width="1200" height="492" fill="#fff"/>
+  <text class="t" x="600" y="30">Figure 4. Water ripple field</text>
+
+  <!-- field -->
+  <text class="c" x="230" y="62">Plan view: a 64 × 64 block field that follows the camera</text>
+  <g transform="translate(70,76)">
+    <rect width="320" height="320" fill="#e4eef9" stroke="#111" stroke-width="1.2"/>
+    <rect width="320" height="320" fill="url(#grid)"/>
+    <!-- shore -->
+    <path d="M0,267 C53,249 80,293 133,286 C187,279 213,313 267,302 C293,297 311,307 320,304 L320,320 L0,320 Z" fill="#e8dcc0" stroke="#111" stroke-width="0.8"/>
+    <!-- boat and wake -->
+    <g class="w">
+      <line x1="265" y1="64" x2="204" y2="76"/>
+      <line x1="265" y1="64" x2="225" y2="112"/>
+      <line x1="258" y1="62" x2="217" y2="70" stroke-opacity="0.45"/>
+      <line x1="263" y1="69" x2="236" y2="101" stroke-opacity="0.45"/>
+    </g>
+    <ellipse cx="276" cy="58" rx="14" ry="5.5" transform="rotate(-30.7 276 58)" fill="#8a5a2b" stroke="#111" stroke-width="0.8"/>
+    <!-- splash -->
+    <g transform="translate(98,133)" class="w">
+      <circle r="6" stroke-width="1.6"/><circle r="14"/><circle r="25" stroke-opacity="0.6"/><circle r="37" stroke-opacity="0.35"/>
+    </g>
+    <!-- falling water landing -->
+    <rect x="265" y="169" width="7" height="7" fill="#2f6db5" stroke="#111" stroke-width="0.6"/>
+    <g transform="translate(268.5,172.5)" class="w">
+      <circle r="10"/><circle r="17" stroke-opacity="0.5"/>
+    </g>
+    <!-- rain rings -->
+    <g class="w" stroke-width="0.9">
+      <circle cx="53" cy="222" r="4.5"/><circle cx="53" cy="222" r="9" stroke-opacity="0.5"/>
+      <circle cx="178" cy="213" r="4"/><circle cx="178" cy="213" r="8" stroke-opacity="0.5"/>
+      <circle cx="296" cy="244" r="4.5"/><circle cx="296" cy="244" r="9" stroke-opacity="0.5"/>
+      <circle cx="142" cy="53" r="4"/><circle cx="142" cy="53" r="7" stroke-opacity="0.5"/>
+      <circle cx="36" cy="53" r="4.5"/><circle cx="36" cy="53" r="9" stroke-opacity="0.5"/>
+    </g>
+    <circle cx="160" cy="160" r="3" fill="#111"/>
+    <text x="168" y="174">camera</text>
+    <!-- callouts -->
+    <text x="130" y="100">1 splash</text>
+    <text x="232" y="130">2 boat wake</text>
+    <text x="187" y="244">3 rain rings</text>
+    <text x="212" y="206">4 falling water</text>
+    <text x="18" y="312">5 shoreline mask</text>
+    <!-- scale -->
+    <line class="l" x1="0" y1="336" x2="320" y2="336"/>
+    <line class="l" x1="0" y1="331" x2="0" y2="341"/><line class="l" x1="320" y1="331" x2="320" y2="341"/>
+    <text class="c" x="160" y="356">64 blocks, 1024 cells (16 per block)</text>
+  </g>
+
+  <!-- pipeline -->
+  <rect class="b" x="540" y="84" width="220" height="110"/><text class="t" x="650" y="108">Sources</text>
+  <text class="c" x="650" y="128">1 things entering the water</text><text class="c" x="650" y="144">2 boats and moving bodies</text><text class="c" x="650" y="160">3 rain drops</text><text class="c" x="650" y="176">4 falling water landing</text>
+  <rect class="b" x="540" y="222" width="220" height="82"/><text class="t" x="650" y="246">Mask</text>
+  <text class="c" x="650" y="266">5 where water is and how deep,</text><text class="c" x="650" y="282">1 block cells, rebuilt every 20 ticks</text>
+  <rect class="b" x="800" y="120" width="190" height="130" stroke-width="2"/><text class="t" x="895" y="144">Height field</text>
+  <text class="c" x="895" y="164">1024 × 1024 cells</text><text class="c" x="895" y="180">(512 × 512 on Low, Medium)</text><text class="c" x="895" y="196">on the GPU, fixed 1/60 s</text><text class="c" x="895" y="212">sub-steps; waves spread</text><text class="c" x="895" y="228">across it and fade</text>
+  <rect class="b" x="1030" y="84" width="150" height="80"/><text class="t" x="1105" y="108">Water surface</text><text class="c" x="1105" y="128">normals for light</text><text class="c" x="1105" y="144">and reflections</text>
+  <rect class="b" x="1030" y="190" width="150" height="80"/><text class="t" x="1105" y="214">Caustics</text><text class="c" x="1105" y="234">on the floor</text><text class="c" x="1105" y="250">below</text>
+  <rect class="b" x="1030" y="296" width="150" height="80"/><text class="t" x="1105" y="320">Foam</text><text class="c" x="1105" y="340">built up and kept</text><text class="c" x="1105" y="356">over time</text>
+  <g class="l" marker-end="url(#a)">
+    <polyline points="760,139 780,139 780,170 798,170"/>
+    <polyline points="760,263 780,263 780,214 798,214"/>
+    <line x1="990" y1="142" x2="1028" y2="142"/>
+    <line x1="990" y1="214" x2="1028" y2="214"/>
+    <polyline points="990,240 1010,240 1010,336 1028,336"/>
+  </g>
+  <text x="800" y="280">Idle water stops simulating</text>
+  <text x="800" y="296">after 18 s with nothing moving.</text>
+
+  <text class="c" x="600" y="458"><tspan class="t">Figure 4.</tspan> The water physics behind splashes, boat wakes and rain rings. A height field around the camera is stirred by what enters,</text>
+  <text class="c" x="600" y="476">moves through and falls into the water, simulated at a fixed rate, and read by the water surface, caustics and foam.</text>
+</svg>

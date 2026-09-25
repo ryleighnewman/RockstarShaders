@@ -1,0 +1,46 @@
+name: Bug report
+description: Something renders wrong, crashes, or is slow.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Rockstar Shaders version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: mac
+    attributes:
+      label: Mac and macOS
+      placeholder: MacBook Pro M2, 16 GB, macOS 26.0
+    validations:
+      required: true
+  - type: dropdown
+    id: profile
+    attributes:
+      label: Quality profile
+      options: [Low, Medium, High, Ultra, Custom]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, where you were standing, what time of day, what the weather was.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: log
+    attributes:
+      label: logs/latest.log
+      description: Attach the file, or paste the lines around the first "Rockstar Shaders" warning.
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshots
+      description: One with the F3 overlay, and one with the pass-timings overlay if it is about speed. Drag them in.

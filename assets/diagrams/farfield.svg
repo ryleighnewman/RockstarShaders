@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 344" width="1200" height="344" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+  <title>Figure 3. Far-field data flow</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9" fill="none" stroke="#111" stroke-width="1.3"/>
+    </marker>
+    <style>
+      text{font-size:12px;fill:#111;font-family:Helvetica,Arial,sans-serif}
+      .b{fill:#fff;stroke:#111;stroke-width:1.2}
+      .k{fill:#fff;stroke:#111;stroke-width:1.2;stroke-dasharray:4 3}
+      .c{text-anchor:middle}
+      .t{text-anchor:middle;font-weight:700}
+      .l{stroke:#111;stroke-width:1.2;fill:none}
+    </style>
+  </defs>
+  <rect width="1200" height="344" fill="#fff"/>
+  <text class="t" x="600" y="30">Figure 3. Far-field data flow</text>
+
+  <rect x="20" y="50" width="226" height="234" fill="#f3f5f8"/>
+  <rect x="274" y="50" width="462" height="234" fill="#f3f5f8"/>
+  <rect x="764" y="50" width="416" height="234" fill="#f3f5f8"/>
+  <text x="30" y="68">Minecraft</text>
+  <text x="284" y="68">Worker threads</text>
+  <text x="774" y="68">Render thread and GPU</text>
+
+  <rect class="b" x="36" y="78" width="194" height="82"/><text class="t" x="133" y="100">World chunks</text><text class="c" x="133" y="120">chunks you have seen, and</text><text class="c" x="133" y="136">the saved world on disk</text><text class="c" x="133" y="152">(singleplayer)</text>
+  <rect class="k" x="36" y="190" width="194" height="82"/><text class="t" x="133" y="212">Generate horizon</text><text class="c" x="133" y="232">singleplayer, on by default:</text><text class="c" x="133" y="248">generates missing chunks</text><text class="c" x="133" y="264">and saves them into the world</text>
+
+  <rect class="b" x="290" y="78" width="194" height="82"/><text class="t" x="387" y="100">LOD store</text><text class="c" x="387" y="120">terrain summarized</text><text class="c" x="387" y="136">column by column</text>
+  <rect class="b" x="290" y="190" width="194" height="82"/><text class="t" x="387" y="212">Generator estimate</text><text class="c" x="387" y="232">singleplayer: height and</text><text class="c" x="387" y="248">biome sampled from the world</text><text class="c" x="387" y="264">generator for missing columns</text>
+  <rect class="b" x="526" y="78" width="194" height="82"/><text class="t" x="623" y="100">Mesher</text><text class="c" x="623" y="120">one mesh per region of</text><text class="c" x="623" y="136">8 × 8 chunks, step set by</text><text class="c" x="623" y="152">its distance (Figure 2)</text>
+
+  <rect class="b" x="780" y="78" width="180" height="82"/><text class="t" x="870" y="100">GPU upload</text><text class="c" x="870" y="120">finished meshes are</text><text class="c" x="870" y="136">uploaded as they arrive</text>
+  <rect class="b" x="990" y="78" width="174" height="82" stroke-width="2"/><text class="t" x="1077" y="100">Far-field draw</text><text class="c" x="1077" y="120">into the G-buffer</text><text class="c" x="1077" y="136">(Figure 1)</text>
+  <rect class="b" x="990" y="190" width="174" height="82"/><text class="t" x="1077" y="212">Far-field shadow</text><text class="c" x="1077" y="232">height map, 128 × 128</text><text class="c" x="1077" y="248">chunks around the camera,</text><text class="c" x="1077" y="264">read by lighting and fog</text>
+
+  <g class="l" marker-end="url(#a)">
+    <line x1="133" y1="190" x2="133" y2="162"/>
+    <line x1="387" y1="190" x2="387" y2="162"/>
+    <line x1="230" y1="119" x2="288" y2="119"/>
+    <line x1="484" y1="119" x2="524" y2="119"/>
+    <line x1="720" y1="119" x2="778" y2="119"/>
+    <line x1="960" y1="119" x2="988" y2="119"/>
+    <polyline points="484,146 505,146 505,231 988,231"/>
+  </g>
+  <text x="520" y="225">column heights</text>
+
+  <text class="c" x="600" y="312"><tspan class="t">Figure 3.</tspan> Where far terrain comes from and how it reaches the frame. Column summaries and meshes are built on worker</text>
+  <text class="c" x="600" y="330">threads, so the far field fills in around you without stalling the game. Generate horizon (dashed) can be turned off.</text>
+</svg>

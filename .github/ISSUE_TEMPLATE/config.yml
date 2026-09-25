@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help and troubleshooting
+    url: https://rockstarshaders.com/help/
+    about: Read this first. Most "it looks like vanilla" reports are the Vulkan switch.
+  - name: Patreon
+    url: https://www.patreon.com/c/rockstarshaders
+    about: Downloads, supporter documentation and the support thread.

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 548" width="1200" height="548" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#111">
+  <title>Figure 2. Render distance and far-field level of detail</title>
+  <defs>
+    <style>
+      text{font-size:12px;fill:#111;font-family:Helvetica,Arial,sans-serif}
+      .c{text-anchor:middle}
+      .e{text-anchor:end}
+      .t{font-weight:700}
+      .ring{stroke:#111;stroke-width:0.8}
+      .l{stroke:#111;stroke-width:1.2;fill:none}
+      .g{stroke:#111;stroke-width:0.5;stroke-opacity:0.25}
+    </style>
+  </defs>
+  <rect width="1200" height="548" fill="#fff"/>
+  <text class="c t" x="600" y="30">Figure 2. Render distance and far-field level of detail</text>
+
+  <!-- plan view, to scale: 0.09766 px per block (2,048 blocks = 200 px) -->
+  <text class="c" x="270" y="66">Plan view to scale: R at 12 chunks, horizon at 128 chunks</text>
+  <g transform="translate(270,284)">
+    <circle class="ring" r="200" fill="#d8e7f6"/>
+    <rect class="ring" x="-117.2" y="-117.2" width="234.4" height="234.4" fill="#bcd6f0"/>
+    <rect class="ring" x="-58.6" y="-58.6" width="117.2" height="117.2" fill="#9dc2e8"/>
+    <rect class="ring" x="-29.3" y="-29.3" width="58.6" height="58.6" fill="#7eaddf"/>
+    <circle r="18.75" fill="#fff" stroke="#111" stroke-width="1.6"/>
+    <circle r="2.5" fill="#111"/>
+    <text class="c t" x="0" y="15">R</text>
+    <text class="c" x="22" y="25">1</text>
+    <text class="c" x="44" y="48">2</text>
+    <text class="c" x="88" y="92">4</text>
+    <text class="c" x="130" y="134">8</text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(560,92)">
+    <rect x="0" y="-14" width="18" height="18" fill="#fff" stroke="#111" stroke-width="1.6"/>
+    <text class="t" x="30" y="0">R, render distance</text>
+    <text x="30" y="20">Minecraft's own chunks at full geometry. Ray traced, shaded and</text>
+    <text x="30" y="36">reflected as described in Figure 1.</text>
+
+    <rect x="0" y="52" width="18" height="18" fill="#7eaddf" stroke="#111" stroke-width="0.8"/>
+    <rect x="18" y="52" width="18" height="18" fill="#9dc2e8" stroke="#111" stroke-width="0.8"/>
+    <rect x="36" y="52" width="18" height="18" fill="#bcd6f0" stroke="#111" stroke-width="0.8"/>
+    <rect x="54" y="52" width="18" height="18" fill="#d8e7f6" stroke="#111" stroke-width="0.8"/>
+    <text class="t" x="84" y="66">Far field</text>
+    <text x="30" y="86">Simplified terrain beyond R, meshed in regions of 8 × 8 chunks. The</text>
+    <text x="30" y="102">sampling step doubles with distance: 2 from 300 blocks, 4 from 600</text>
+    <text x="30" y="118">and 8 from 1,200 (the numbers on the plan). Steep regions are drawn</text>
+    <text x="30" y="134">one step finer. The horizon reaches 32 to 128 chunks, 64 by default.</text>
+
+    <line class="l" x1="0" y1="162" x2="18" y2="162" stroke-width="1.6"/>
+    <text class="t" x="30" y="166">Seam</text>
+    <text x="30" y="186">The handover at R follows vanilla's round chunk edge, so near and</text>
+    <text x="30" y="202">far terrain meet without a square border.</text>
+  </g>
+
+  <!-- step chart, same scale on distance: 560 px = 2,048 blocks -->
+  <g transform="translate(600,352)">
+    <text x="-40" y="-14">Far-field sampling step against distance from the camera</text>
+    <line class="l" x1="0" y1="0" x2="0" y2="88"/>
+    <line class="l" x1="0" y1="88" x2="560" y2="88"/>
+    <line class="g" x1="0" y1="66" x2="560" y2="66"/><line class="g" x1="0" y1="44" x2="560" y2="44"/>
+    <line class="g" x1="0" y1="22" x2="560" y2="22"/><line class="g" x1="0" y1="0" x2="560" y2="0"/>
+    <text class="e" x="-10" y="70">1</text><text class="e" x="-10" y="48">2</text>
+    <text class="e" x="-10" y="26">4</text><text class="e" x="-10" y="4">8</text>
+    <rect x="0" y="0" width="52.5" height="88" fill="#f3f5f8"/>
+    <polyline points="52.5,66 82,66 82,44 164,44 164,22 328,22 328,0 560,0" fill="none" stroke="#2f6db5" stroke-width="2"/>
+    <line class="l" x1="52.5" y1="0" x2="52.5" y2="88" stroke-dasharray="3 3"/>
+    <text class="c" x="26" y="40">full</text><text class="c" x="26" y="56">chunks</text>
+    <g class="l">
+      <line x1="52.5" y1="88" x2="52.5" y2="94"/><line x1="82" y1="88" x2="82" y2="94"/>
+      <line x1="164" y1="88" x2="164" y2="94"/><line x1="328" y1="88" x2="328" y2="94"/>
+      <line x1="560" y1="88" x2="560" y2="94"/>
+    </g>
+    <text class="c t" x="52.5" y="108">R</text>
+    <text class="c" x="84" y="108">300</text>
+    <text class="c" x="164" y="108">600</text>
+    <text class="c" x="328" y="108">1,200</text>
+    <text class="c" x="560" y="108">2,048</text>
+    <text class="c" x="444" y="108">distance, blocks</text>
+  </g>
+
+  <text class="c" x="600" y="514"><tspan class="t">Figure 2.</tspan> The extended render distance. Full detail inside R, then square rings of simplified terrain whose sampling step</text>
+  <text class="c" x="600" y="532">doubles each time the distance doubles, out to a round horizon.</text>
+</svg>
