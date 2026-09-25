@@ -19,12 +19,12 @@ Neither the Software nor the Site collects personal data. The Software makes no 
 
 - **Hosting.** The Site is static files served by Cloudflare. Cloudflare, like every host, keeps ordinary server logs (the address a request came from, the page requested, the time, the browser's identification string) for security and operation, under Cloudflare's own privacy policy. The author does not use those logs to identify visitors.
 - **No cookies, no analytics, no tracking pixels, no accounts, no forms, no newsletter.**
-- **Embedded and linked services.** Pages link to Patreon, GitHub and YouTube. Following a link takes you to that service, under its own policy. A video on the home page is a file served from the Site, not an embed from YouTube.
+- **Embedded and linked services.** Pages link to Modrinth, GitHub and YouTube. Following a link takes you to that service, under its own policy. A video on the home page is a file served from the Site, not an embed from YouTube.
 - **Search engines.** The Site publishes a sitemap and, after each update, tells search engines it changed (the IndexNow protocol). That sends the Site's own addresses, nothing about visitors.
 
-## Patreon, GitHub and support
+## Downloads, GitHub and support
 
-If you support the project on Patreon, Patreon handles your account, payment and membership under its own policy; the author sees what Patreon shows creators (your Patreon name and tier), and uses it only to provide the builds you are entitled to. If you open an issue on GitHub or send an email, the author keeps that correspondence, including any log file or screenshot you attach, for as long as it is useful to fix the problem. Log files can contain your computer's user name and folder paths; remove anything you do not want to share before sending.
+If you download the Software from Modrinth or GitHub, that service handles the download under its own policy; the author sees only the aggregate download counts those services show. If you open an issue on GitHub or send an email, the author keeps that correspondence, including any log file or screenshot you attach, for as long as it is useful to fix the problem. Log files can contain your computer's user name and folder paths; remove anything you do not want to share before sending.
 
 ## Children
 
