@@ -9,10 +9,10 @@ skies and weather, traced on the GPU inside your Mac with Metal.
 
 [Watch the launch film on YouTube](https://youtu.be/3XGQaTYL5oM), captured in the engine at 4K 60 fps.
 
-<a href="https://modrinth.com/mod/rockstarshaders"><img src="https://img.shields.io/badge/Download_on_Modrinth-1BD96A?style=for-the-badge&logo=modrinth&logoColor=white" alt="Download Rockstar Shaders on Modrinth" height="44"></a>
+<a href="https://rockstarshaders.com/download"><img src="https://img.shields.io/badge/Download_free-1.0.0-1BD96A?style=for-the-badge" alt="Download Rockstar Shaders 1.0.0 free" height="44"></a>
 
-Rockstar Shaders 1.0.0 is free. Download it on [Modrinth](https://modrinth.com/mod/rockstarshaders) or from the
-[Releases page](../../releases). Website and help: [rockstarshaders.com](https://rockstarshaders.com).
+Rockstar Shaders 1.0.0 is free. Download it from [rockstarshaders.com/download](https://rockstarshaders.com/download) or the
+[Releases page](../../releases). [Modrinth](https://modrinth.com/mod/rockstarshaders) (pending approval). Website and help: [rockstarshaders.com](https://rockstarshaders.com).
 
 ## Install
 
@@ -25,7 +25,7 @@ You need:
 Then:
 
 1. Install Fabric Loader and Fabric API for Minecraft 26.3.
-2. Download `rockstarshaders-1.0.0.jar` from [Modrinth](https://modrinth.com/mod/rockstarshaders) or the [Releases page](../../releases) and drop it into your `.minecraft/mods/` folder.
+2. Download `rockstarshaders-1.0.0.jar` from [rockstarshaders.com/download](https://rockstarshaders.com/download) or the [Releases page](../../releases) and drop it into your `.minecraft/mods/` folder.
 3. Start the game. Say yes when it asks to switch Minecraft to Vulkan, then start it again.
 4. In a world, press K for the settings. Hold C to zoom.
 

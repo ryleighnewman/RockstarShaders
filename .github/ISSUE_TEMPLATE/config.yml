@@ -3,6 +3,6 @@ contact_links:
   - name: Help and troubleshooting
     url: https://rockstarshaders.com/help/
     about: Read this first. Most "it looks like vanilla" reports are the Vulkan switch.
-  - name: Download on Modrinth
-    url: https://modrinth.com/mod/rockstarshaders
-    about: The latest release, free.
+  - name: Download
+    url: https://rockstarshaders.com/download
+    about: The latest release, free. Also on the Releases page; Modrinth is pending approval.
