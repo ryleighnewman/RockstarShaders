@@ -17,7 +17,8 @@ Rockstar Shaders (the "Software") is proprietary, closed-source software. It is 
 Subject to this agreement, the Licensor grants you a personal, non-exclusive, non-transferable, revocable license to:
 
 1. install and run the Software on computers that you own or control, for playing Minecraft: Java Edition;
-2. make screenshots, recordings, videos and streams of Minecraft running with the Software, and publish them, commercially or not, provided you name Rockstar Shaders as the shader mod in the description or credits.
+2. keep using any build of the Software that you downloaded, after newer builds are released, under the terms of this agreement;
+3. make screenshots, recordings, videos and streams of Minecraft running with the Software, and publish them, commercially or not, provided you name Rockstar Shaders as the shader mod in the description or credits.
 
 ## 3. What you may not do
 
@@ -27,9 +28,9 @@ You may not, and may not let anyone else:
 2. decompile, disassemble, reverse engineer, extract the shader programs or native libraries from, or otherwise attempt to derive the source of the Software, except to the extent that applicable law expressly allows it despite this term;
 3. modify, translate, adapt or make derivative works of the Software, or of any shader program, texture, model or other file that ships inside it;
 4. remove, hide or alter any copyright, trademark or other notice in the Software;
-5. use the name Rockstar Shaders, the star logo, or any confusingly similar name or mark, for any product, pack, service, channel or page, or in a way that suggests the Licensor endorses you, except for the credit described in section 2.2;
+5. use the name Rockstar Shaders, the star logo, or any confusingly similar name or mark, for any product, pack, service, channel or page, or in a way that suggests the Licensor endorses you, except for the credit described in section 2.3;
 6. use the Software to violate the Minecraft End User License Agreement or the rules of any server you play on;
-7. circumvent the way the Software is distributed, including by obtaining it from anywhere other than the official channels: https://modrinth.com/mod/rockstarshaders, https://github.com/ryleighnewman/RockstarShaders/releases, https://rockstarshaders.com, or another channel the Licensor names.
+7. circumvent the way the Software is distributed, including by obtaining it from anyone other than the Licensor's own Modrinth page, the releases page of the Licensor's GitHub repository, or another channel the Licensor names.
 
 ## 4. Ownership
 
@@ -37,7 +38,7 @@ The Software is protected by copyright and other laws. The Licensor keeps every 
 
 ## 5. Distribution and updates
 
-The Software is offered free of charge through the official channels named in section 3.7. The Licensor decides which builds are offered and for how long. The Licensor is under no obligation to provide updates, new builds, support or any particular feature, and may stop offering the Software at any time.
+The Software is offered free of charge through the Licensor's Modrinth page (https://modrinth.com/mod/rockstarshaders) and the releases page of the Licensor's GitHub repository. The Licensor decides which builds are offered and for how long. Modrinth's and GitHub's own terms govern your use of those services. The Licensor is under no obligation to provide updates, new builds, support or any particular feature, and may stop offering the Software at any time.
 
 ## 6. Pre-release software
 
@@ -57,7 +58,7 @@ The Software is provided "as is" and "as available", without warranty of any kin
 
 ## 10. Limitation of liability
 
-To the fullest extent permitted by law, the Licensor is not liable to you for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, worlds, saves, profits or goodwill, arising out of or related to the Software or this agreement, however caused, even if advised of the possibility. To the fullest extent permitted by law, the Licensor's total liability to you for all claims under this agreement is limited to the amount, if any, that you paid the Licensor for the Software in the twelve months before the claim arose. Some jurisdictions do not allow some of these limits; in those places they apply only as far as the law allows.
+To the fullest extent permitted by law, the Licensor is not liable to you for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, worlds, saves, profits or goodwill, arising out of or related to the Software or this agreement, however caused, even if advised of the possibility. To the fullest extent permitted by law, the Licensor's total liability to you for all claims under this agreement is limited to the amount, if any, you paid the Licensor for the Software in the twelve months before the claim arose. Some jurisdictions do not allow some of these limits; in those places they apply only as far as the law allows.
 
 ## 11. Termination
 
