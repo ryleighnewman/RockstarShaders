@@ -38,7 +38,7 @@ steps aside and tells you why. Step-by-step help for every setting is at
 
 All captured in the engine at 4K on an M4 Max MacBook Pro, from the launch film.
 
-![Rockstar Shaders in motion: a boat on a river at sunset, lightning over a bridge, flying with an elytra, and a splash in a pool](assets/rockstar-shaders.gif)
+<img src="assets/rockstar-shaders.gif" width="100%" alt="Rockstar Shaders in motion: a boat on a river at sunset, lightning over a bridge, flying with an elytra, and a splash in a pool">
 
 ![Minecraft shaders on Mac: flying with an elytra over the mountains at sunset](assets/gallery/elytra-sunset.jpg)
 
