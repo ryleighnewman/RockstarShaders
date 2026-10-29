@@ -9,10 +9,10 @@ skies and weather, traced on the GPU inside your Mac with Metal.
 
 [Watch the launch film on YouTube](https://youtu.be/3XGQaTYL5oM), captured in the engine at 4K 60 fps.
 
-<a href="https://rockstarshaders.com/download"><img src="https://img.shields.io/badge/Download_free-1.0.0-1BD96A?style=for-the-badge" alt="Download Rockstar Shaders 1.0.0 free" height="44"></a>
+<a href="https://rockstarshaders.com/download"><img src="https://img.shields.io/badge/Download_free-1.0.0-1BD96A?style=for-the-badge" alt="Download Rockstar Shaders 1.0.0 free" height="44"></a> <a href="https://www.curseforge.com/minecraft/mc-mods/rockstar-shaders"><img src="https://img.shields.io/badge/Get_it_on-CurseForge-F16436?style=for-the-badge&logo=curseforge&logoColor=white" alt="Get Rockstar Shaders on CurseForge" height="44"></a>
 
 Rockstar Shaders 1.0.0 is free. Download it from [rockstarshaders.com/download](https://rockstarshaders.com/download) or the
-[Releases page](../../releases). [Modrinth](https://modrinth.com/mod/rockstarshaders) (pending approval). Website and help: [rockstarshaders.com](https://rockstarshaders.com).
+[Releases page](../../releases), and it is on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/rockstar-shaders). [Modrinth](https://modrinth.com/mod/rockstarshaders) (pending approval). Website and help: [rockstarshaders.com](https://rockstarshaders.com).
 
 ## Install
 
